@@ -1,6 +1,164 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dawah Companion</title><meta name="description" content="Explain Islam clearly and with respect: answers with Qur'an, hadith and Bible references, courses, guided proofs and practice drills. Offline, no ads, no data collected."><style>:root{--bg:#f5f0e8;--fg:#1f2a24;--muted:#5b6660;--accent:#1f4d3a}@media (prefers-color-scheme:dark){:root{--bg:#141a17;--fg:#ece6da;--muted:#a3aba6;--accent:#7fbf9f}}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 -apple-system,system-ui,sans-serif}main{max-width:680px;margin:0 auto;padding:48px 16px}h1{font-family:Georgia,serif;color:var(--accent);margin-bottom:4px}h2{font-size:1.1em;margin-top:2em}.muted{color:var(--muted)}a{color:var(--accent)}</style></head><body><main>
-<h1>Dawah Companion</h1><p class="muted">Explain Islam clearly and with respect.</p>
-<p>Answers to the questions people really ask about Islam, each with a 30-second version, a 2-minute explanation, and the Qur'an, hadith and Bible references behind it. Six courses with quizzes, guided proofs, the method behind good da'wah, practice drills and an Exhibition Mode for the stall.</p>
-<p>Works fully offline. No account, no ads, no data collected. For iPhone, iPad and Android.</p>
-<p><a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></p>
-</main></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dawah Companion</title>
+<meta name="description" content="Explain Islam clearly and with confidence: answers with Qur&#x27;an, hadith and Bible references, courses, guided proofs and practice drills. Offline, no ads, no data collected.">
+<meta name="theme-color" content="#1F4D3A">
+<link rel="canonical" href="https://ahussein17-aa.github.io/dawah-companion-site/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dawah Companion">
+<meta property="og:description" content="Explain Islam clearly and with confidence.">
+<meta property="og:url" content="https://ahussein17-aa.github.io/dawah-companion-site/">
+<meta property="og:image" content="https://ahussein17-aa.github.io/dawah-companion-site/icons/dawah.png">
+<link rel="icon" href="icons/dawah.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,700&family=Inter:wght@400;500;600&family=Amiri:wght@400;700&display=swap">
+<style>
+  :root { --bg:#F6F1E8;--ink:#213029;--soft:#5C6B62;--card:#FFFFFF;--line:#E7DECB;--band:#EFE8DA;--accent:#1F4D3A;--gold:#A8843A;--hero-bg:#F6F1E8;--hero-ink:#213029;--hero-soft:#5C6B62;--hero-accent:#1F4D3A;--shadow:0 18px 40px -18px rgba(33,48,41,.35);--yd-badge-bg:#1F4D3A;--yd-badge-fg:#FFFFFF;--yd-line:#E7DECB;--yd-card:#FFFFFF; --head:"Source Serif 4", Georgia, serif; --head-weight:700; --body:Inter, -apple-system, "Segoe UI", sans-serif; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#12211B;--ink:#F1ECE1;--soft:#B6C2BB;--card:#1C2E26;--line:rgba(255,255,255,.1);--band:#16281F;--accent:#8FCBAB;--gold:#C8A45A;--hero-bg:#12211B;--hero-ink:#F1ECE1;--hero-soft:#B6C2BB;--hero-accent:#8FCBAB;--shadow:0 18px 40px -18px rgba(0,0,0,.7);--yd-badge-bg:#F1ECE1;--yd-badge-fg:#12211B;--yd-line:rgba(255,255,255,.12);--yd-card:#1C2E26; } }
+  .hero {  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 1.0625rem; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3 { font-family: var(--head); font-weight: var(--head-weight); text-wrap: balance; margin: 0; }
+  p { margin: 0; }
+  a { color: var(--accent); }
+  .wrap { max-width: 68rem; margin: 0 auto; padding: 0 1.5rem; }
+
+  .hero { padding: 4.5rem 0 3.5rem; text-align: center; background: var(--hero-bg); color: var(--hero-ink); }
+  .hero .icon { width: 5.5rem; height: 5.5rem; border-radius: 1.3rem; box-shadow: 0 14px 30px -14px rgba(0,0,0,0.5); margin-bottom: 1.5rem; }
+  .hero .arabic { font-family: Amiri, serif; font-size: clamp(1.9rem, 5vw, 2.7rem); line-height: 1.6; color: var(--hero-accent); margin-bottom: 0.4rem; }
+  .hero h1 { font-size: clamp(2.2rem, 5.5vw, 3.4rem); letter-spacing: -0.01em; margin-bottom: 0.9rem; }
+  .hero .tagline { font-size: clamp(1.1rem, 2.2vw, 1.3rem); color: var(--hero-soft); max-width: 34rem; margin: 0 auto 2rem; }
+  .hero .note { font-size: 0.9rem; color: var(--hero-soft); margin-top: 1rem; }
+
+  .screens { display: flex; justify-content: center; align-items: flex-end; gap: clamp(0.9rem, 3vw, 2.25rem); padding: 3rem 1.5rem 1rem; flex-wrap: wrap; }
+  figure.phone { margin: 0; border: 1px solid var(--line); border-radius: 1.9rem; padding: 0.5rem; background: var(--card); box-shadow: var(--shadow); width: min(15rem, 76vw); }
+  figure.phone.tall { width: min(17rem, 82vw); }
+  .phone img { display: block; width: 100%; height: auto; border-radius: 1.45rem; }
+  .phone figcaption { text-align: center; font-size: 0.85rem; color: var(--soft); padding: 0.6rem 0 0.2rem; }
+  @media (max-width: 40rem) {
+    .screens { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; align-items: flex-start; scroll-snap-type: x mandatory; padding-bottom: 1.5rem; }
+    .screens figure.phone, .screens figure.phone.tall { flex: none; width: 64vw; scroll-snap-align: center; }
+  }
+
+  .section { padding: 3.5rem 0; }
+  .eyebrow { font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 0.7rem; }
+  .section h2, .yd-more h2 { font-size: clamp(1.6rem, 3.4vw, 2.15rem); margin-bottom: 0.9rem; }
+  .lede { color: var(--soft); max-width: 42rem; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1.1rem; margin-top: 2.25rem; }
+  .feature { background: var(--card); border: 1px solid var(--line); border-radius: 1.1rem; padding: 1.5rem 1.4rem; }
+  .feature h3 { font-size: 1.15rem; margin-bottom: 0.45rem; }
+  .feature p { font-size: 0.97rem; color: var(--soft); }
+  .feature .dot { width: 0.6rem; height: 0.6rem; border-radius: 50%; background: var(--gold); margin-bottom: 1rem; }
+
+  .band { background: var(--band); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .strip { display: flex; gap: 1.1rem; overflow-x: auto; padding: 2rem 1.5rem 0.5rem; scroll-snap-type: x mandatory; }
+  .strip figure.phone { flex: none; scroll-snap-align: center; width: min(13.5rem, 62vw); box-shadow: none; }
+  @media (min-width: 60rem) { .strip { justify-content: center; } }
+
+  .promise { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 2.25rem; margin-top: 2rem; }
+  .promise h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+  .promise p { color: var(--soft); font-size: 1rem; }
+
+  .cta { text-align: center; }
+  .cta h2 { margin-bottom: 1.5rem; }
+
+  footer { border-top: 1px solid var(--line); padding: 2.25rem 0 3rem; text-align: center; color: var(--soft); font-size: 0.92rem; }
+  footer .links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1.6rem; margin-bottom: 0.9rem; }
+  footer a { color: var(--soft); }
+
+  .yd-badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; }
+  .yd-badge {
+    display: inline-flex; align-items: center; gap: 0.65rem; min-width: 11.5rem;
+    background: var(--yd-badge-bg, #1c1c1e); color: var(--yd-badge-fg, #fff);
+    border: 1px solid var(--yd-badge-border, transparent);
+    border-radius: 0.75rem; padding: 0.6rem 1.25rem 0.65rem 1rem;
+    text-decoration: none; transition: transform 0.15s ease;
+  }
+  a.yd-badge:hover { transform: translateY(-2px); }
+  .yd-badge svg { flex: none; }
+  .yd-lines { text-align: left; line-height: 1.2; }
+  .yd-small { display: block; font-size: 0.7rem; letter-spacing: 0.04em; opacity: 0.8; }
+  .yd-big { display: block; font-size: 1.15rem; font-weight: 600; }
+  .yd-soon { background: transparent; color: var(--yd-soon-fg, currentColor); border: 1px dashed var(--yd-soon-border, currentColor); opacity: 0.7; }
+  @media (prefers-reduced-motion: reduce) { .yd-badge { transition: none; } }
+
+  .yd-more { padding: 3.5rem 0; border-top: 1px solid var(--yd-line, rgba(128,128,128,0.25)); }
+  .yd-more .yd-wrap { max-width: 68rem; margin: 0 auto; padding: 0 1.5rem; }
+  .yd-more h2 { margin: 0 0 0.4rem; }
+  .yd-more .yd-sub { margin: 0 0 1.75rem; opacity: 0.75; }
+  .yd-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; }
+  .yd-app {
+    display: flex; align-items: center; gap: 0.9rem; padding: 0.9rem 1rem;
+    border: 1px solid var(--yd-line, rgba(128,128,128,0.25)); border-radius: 1rem;
+    background: var(--yd-card, transparent); color: inherit; text-decoration: none;
+  }
+  .yd-app:hover { border-color: currentColor; }
+  .yd-app img { width: 3.25rem; height: 3.25rem; border-radius: 0.8rem; flex: none; }
+  .yd-app b { display: block; font-size: 1.02rem; }
+  .yd-app span { display: block; font-size: 0.88rem; opacity: 0.75; line-height: 1.35; }
+  .yd-all { display: inline-block; margin-top: 1.5rem; }
+
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <img class="icon" src="icons/dawah.png" alt="Dawah Companion app icon" width="88" height="88">
+    <p class="arabic" lang="ar" dir="rtl">ٱدْعُ إِلَىٰ سَبِيلِ رَبِّكَ بِٱلْحِكْمَةِ</p>
+    <h1>Dawah Companion</h1>
+    
+    <p class="tagline">Become confident explaining Islam. Clear answers, the references behind them, and a place to practise before the conversation.</p>
+    <div class="yd-badges"><a class="yd-badge" href="https://apps.apple.com/app/id6817459810"><svg width="22" height="26" viewBox="0 0 26 30" fill="currentColor" aria-hidden="true"><path d="M21.6 15.9c0-3.1 2.5-4.6 2.6-4.7-1.4-2.1-3.7-2.4-4.5-2.4-1.9-.2-3.7 1.1-4.7 1.1-1 0-2.5-1.1-4.1-1.1-2.1 0-4 1.2-5.1 3.1-2.2 3.8-.6 9.3 1.6 12.4 1 1.5 2.3 3.1 3.9 3.1 1.6-.1 2.2-1 4.1-1 1.9 0 2.4 1 4.1 1 1.7 0 2.8-1.5 3.8-3 1.2-1.7 1.7-3.4 1.7-3.5-.1 0-3.4-1.3-3.4-5zM18.4 6.3c.9-1 1.4-2.4 1.3-3.8-1.2.1-2.7.8-3.6 1.8-.8.9-1.5 2.3-1.3 3.7 1.4.1 2.7-.7 3.6-1.7z"/></svg><span class="yd-lines"><span class="yd-small">Download on the</span><span class="yd-big">App Store</span></span></a><span class="yd-badge yd-soon" aria-disabled="true"><svg width="22" height="24" viewBox="0 0 24 26" fill="currentColor" aria-hidden="true"><path d="M3.2 1.1c-.5.3-.8.9-.8 1.600v20.600c0 .7.3 1.300.8 1.600L14.600 13 3.200 1.100zM16 11.500 5.800 1.300l12.700 7.300L16 11.500zM16 14.500l2.500 2.900L5.800 24.700 16 14.500zM20.300 9.700l2.600 1.500c1.400.8 1.400 2.800 0 3.600l-2.600 1.500L17.400 13l2.900-3.300z"/></svg><span class="yd-lines"><span class="yd-small">Coming soon on</span><span class="yd-big">Google Play</span></span></span></div>
+    <p class="note">Free on iPhone · works fully offline · no account, no ads</p>
+  </div>
+</header>
+
+<section class="screens" aria-label="App screenshots"><figure class="phone"><img src="shots/03-topics.webp" alt="Topics people ask about" width="480" height="853" loading="lazy"><figcaption>Topics people ask about</figcaption></figure><figure class="phone tall"><img src="shots/06-topic.webp" alt="A 30 second answer first" width="480" height="853" loading="lazy"><figcaption>A 30 second answer first</figcaption></figure><figure class="phone"><img src="shots/02-exhibition.webp" alt="Exhibition Mode" width="480" height="853" loading="lazy"><figcaption>Exhibition Mode</figcaption></figure></section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">What&#x27;s inside</p>
+    <h2>Learn the method, then practise</h2>
+    <p class="lede">Every answer comes in a 30 second version and a 2 minute version, with the Qur&#x27;an, hadith and Bible references behind it.</p>
+    <div class="features"><div class="feature"><div class="dot"></div><h3>Answers that are ready</h3><p>The questions people really ask: who Allah is, who Muhammad ﷺ is, Jesus in Islam, women in Islam, the purpose of life and more.</p></div><div class="feature"><div class="dot"></div><h3>Six courses</h3><p>Short lessons with quizzes that build from mindset and manners to the foundations of Islam and the proofs for them.</p></div><div class="feature"><div class="dot"></div><h3>Practice drills</h3><p>Pick a question from a Christian, an atheist or a student, think through your answer, then reveal a recommended approach.</p></div><div class="feature"><div class="dot"></div><h3>Exhibition Mode</h3><p>Big buttons for the stall. One tap takes a visitor straight to a clear answer.</p></div></div>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="wrap">
+    <p class="eyebrow">A closer look</p>
+    <h2>Made to be opened every day</h2>
+  </div>
+  <div class="strip" aria-label="More screenshots"><figure class="phone"><img src="shots/01-home.webp" alt="Courses on the home tab" width="480" height="853" loading="lazy"><figcaption>Courses on the home tab</figcaption></figure><figure class="phone"><img src="shots/05-course.webp" alt="Lessons in order" width="480" height="853" loading="lazy"><figcaption>Lessons in order</figcaption></figure><figure class="phone"><img src="shots/07-training.webp" alt="Training by audience" width="480" height="853" loading="lazy"><figcaption>Training by audience</figcaption></figure><figure class="phone"><img src="shots/08-drill.webp" alt="Think, then reveal" width="480" height="853" loading="lazy"><figcaption>Think, then reveal</figcaption></figure></div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">Built with care</p>
+    <h2>Two promises</h2>
+    <div class="promise"><div><h3>Gentle and accurate</h3><p>The answers are written to be shared with respect, and each one shows its sources so you can check them and quote them correctly.</p></div><div><h3>Private by design</h3><p>Works fully offline. No account, no ads, no data collected.</p></div></div>
+  </div>
+</section>
+
+<section class="section band cta">
+  <div class="wrap">
+    <h2>Be ready when it matters</h2>
+    <div class="yd-badges"><a class="yd-badge" href="https://apps.apple.com/app/id6817459810"><svg width="22" height="26" viewBox="0 0 26 30" fill="currentColor" aria-hidden="true"><path d="M21.6 15.9c0-3.1 2.5-4.6 2.6-4.7-1.4-2.1-3.7-2.4-4.5-2.4-1.9-.2-3.7 1.1-4.7 1.1-1 0-2.5-1.1-4.1-1.1-2.1 0-4 1.2-5.1 3.1-2.2 3.8-.6 9.3 1.6 12.4 1 1.5 2.3 3.1 3.9 3.1 1.6-.1 2.2-1 4.1-1 1.9 0 2.4 1 4.1 1 1.7 0 2.8-1.5 3.8-3 1.2-1.7 1.7-3.4 1.7-3.5-.1 0-3.4-1.3-3.4-5zM18.4 6.3c.9-1 1.4-2.4 1.3-3.8-1.2.1-2.7.8-3.6 1.8-.8.9-1.5 2.3-1.3 3.7 1.4.1 2.7-.7 3.6-1.7z"/></svg><span class="yd-lines"><span class="yd-small">Download on the</span><span class="yd-big">App Store</span></span></a><span class="yd-badge yd-soon" aria-disabled="true"><svg width="22" height="24" viewBox="0 0 24 26" fill="currentColor" aria-hidden="true"><path d="M3.2 1.1c-.5.3-.8.9-.8 1.600v20.600c0 .7.3 1.300.8 1.600L14.600 13 3.200 1.100zM16 11.500 5.800 1.300l12.700 7.300L16 11.500zM16 14.500l2.500 2.900L5.800 24.700 16 14.500zM20.300 9.700l2.600 1.500c1.400.8 1.400 2.800 0 3.600l-2.600 1.500L17.400 13l2.900-3.300z"/></svg><span class="yd-lines"><span class="yd-small">Coming soon on</span><span class="yd-big">Google Play</span></span></span></div>
+  </div>
+</section>
+
+<section class="yd-more" id="more-apps"><div class="yd-wrap"><h2>More from Yalla Designs</h2><p class="yd-sub">Free, offline and private, like this one.</p><div class="yd-grid"><a class="yd-app" href="https://ahussein17-aa.github.io/sahaba-site/"><img src="icons/sahaba.png" alt="" width="52" height="52"><div><b>Sahaba</b><span>The lives of the Companions, told simply.</span></div></a><a class="yd-app" href="https://ahussein17-aa.github.io/daily-dhikr-site/"><img src="icons/dailydhikr.png" alt="" width="52" height="52"><div><b>Daily Dhikr</b><span>Morning, evening and sleep adhkar, with a daily streak.</span></div></a><a class="yd-app" href="https://ahussein17-aa.github.io/99-names-pages/"><img src="icons/names99.png" alt="" width="52" height="52"><div><b>99 Names</b><span>Know Allah through His Beautiful Names.</span></div></a><a class="yd-app" href="https://ahussein17-aa.github.io/ayah-site/"><img src="icons/ayah.png" alt="" width="52" height="52"><div><b>Ayah</b><span>Reflect on the signs within the Qur&#x27;an.</span></div></a></div><a class="yd-all" href="https://ahussein17-aa.github.io/apps/">See all five apps</a></div></section>
+
+<footer>
+  <div class="wrap">
+    <div class="links"><a href="https://apps.apple.com/app/id6817459810">App Store</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="https://ahussein17-aa.github.io/apps/">All apps</a></div>
+    <p>© 2026 Yalla Designs</p>
+  </div>
+</footer>
+
+</body>
+</html>
